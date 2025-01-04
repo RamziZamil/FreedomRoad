@@ -93,6 +93,6 @@
   - Recent activity logs.
 - **Footer**: Basic navigation and logout option.
 
-### _Here is the link for the Wireframe and Mockup _
+### *Here is the link for the Wireframe and Mockup* ###
 
 - **Wireframe & Mockup Link**: [Here](https://www.figma.com/design/arunno8nbwGWfRRG7ndUb2/MasterPiece?node-id=0-1&t=SnabUSsSW4ZgkBeb-1)
