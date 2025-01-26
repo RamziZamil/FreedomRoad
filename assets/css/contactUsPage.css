@@ -1,0 +1,199 @@
+/* Main Container */
+.main-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #faf6f0;
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #faf6f0 !important; /* Updated navbar color */
+  padding: 15px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Dark text for better contrast */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5b7f1d; /* Matching the intro text color */
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Style for Sign In and Sign Up buttons */
+.btn-outline-dark {
+  color: #333;
+  border-color: #5b7f1d;
+}
+
+.btn-outline-dark:hover {
+  background-color: #5b7f1d;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #cfd5a8;
+  border-color: #cfd5a8;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #b8c07e;
+  border-color: #b8c07e;
+  color: #fff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  background: url("../img/contactHero.png") no-repeat center center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  background-color: #faf6f0;
+  padding: 20px;
+  border: 2px solid #3b4e2d;
+  border-radius: 8px;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form .btn-success {
+  background-color: #5b7f1d;
+  border: none;
+}
+
+.contact-form .btn-success:hover {
+  background-color: #3b4e2d;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #3b4e2d;
+  background-color: #faf6f0;
+}
+
+.card h5 {
+  font-weight: bold;
+  color: #3b4e2d;
+}
+
+.card p,
+.card li {
+  font-size: 1rem;
+  color: #333;
+}
+
+.text-success {
+  color: #5b7f1d !important;
+}
+
+/* Styling for invalid input messages */
+.contact-form .invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Highlighting input fields on error */
+.contact-form .form-control.is-invalid,
+.contact-form .form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.contact-form .form-control.is-valid,
+.contact-form .form-select.is-valid {
+  border-color: #28a745;
+}
+
+/* Show error message if input is invalid */
+.contact-form .form-control.is-invalid + .invalid-feedback,
+.contact-form .form-select.is-invalid + .invalid-feedback {
+  display: block;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #3b4e2d; /* Dark green background */
+  color: #ffffff;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer ul li strong {
+  font-weight: bold;
+}
+
+.footer ul li:hover {
+  color: #cfd5a8; /* Light green on hover */
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #cfd5a8;
+}
+
+.footer .privacy-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .privacy-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,570 @@
+/* Main container to hold everything */
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #faf6f0 !important; /* Updated navbar color */
+  padding: 15px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Dark text for better contrast */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5b7f1d; /* Matching the intro text color */
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Style for Sign In and Sign Up buttons */
+.btn-outline-dark {
+  color: #333;
+  border-color: #5b7f1d;
+}
+
+.btn-outline-dark:hover {
+  background-color: #5b7f1d;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #cfd5a8;
+  border-color: #cfd5a8;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #b8c07e;
+  border-color: #b8c07e;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire section */
+  filter: brightness(70%);
+}
+
+/* Content box for hero text */
+.content-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+.intro-section {
+  background-color: #faf0e2;
+  padding: 50px 0;
+  position: relative;
+}
+
+/* Introduction text styling */
+/* Introduction Section */
+.intro-section {
+  background-color: #faf0e2;
+  padding: 50px 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Introduction text styling */
+.intro-text {
+  font-size: 1.5rem;
+  color: #5b7f1d;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal; /* Removed bold text */
+}
+
+/* Left top corner squiggly lines */
+.squiggly-lines {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100px;
+}
+
+/* Bottom right corner leaf image */
+.leaf-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: #faf6f0;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.benefits-icon {
+  font-size: 2.5rem;
+  color: #5b7f1d;
+  margin-bottom: 15px;
+}
+
+.benefits-section h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+.benefits-section p {
+  color: #555;
+}
+
+/* Button styles */
+.btn-dark {
+  background-color: #cfd5a8; /* Updated button color */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #333; /* Ensuring text color contrasts well */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.btn-dark:hover {
+  background-color: #b8c07e;
+  transform: scale(1.05);
+}
+
+/* Why Choose Section */
+.why-choose-section {
+  background-color: #faf0e2; /* Match the previous sections */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.choose-icon {
+  font-size: 3rem; /* Adjust icon size */
+  color: #5b7f1d; /* Green icon color */
+  margin-bottom: 15px;
+}
+
+.why-choose-section h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.why-choose-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Our Services Section */
+.our-services-section {
+  background-color: #faf6f0; /* Match section background color */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5b7f1d;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Divider with dot in the center */
+.services-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background-color: #5b7f1d;
+  margin: 0 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #5b7f1d;
+  border-radius: 50%;
+}
+
+/* Service card styling */
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease;
+  height: 350px; /* Fixed height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #5b7f1d;
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  flex-grow: 1; /* Ensuring content takes available space */
+}
+
+/* Learn More link */
+.learn-more {
+  font-size: 1rem;
+  color: #5b7f1d;
+  font-weight: bold;
+  text-decoration: none;
+  align-self: flex-end; /* Keep it at the bottom */
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #faf0e2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.testimonials-subtitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testimonials-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5b7f1d;
+  margin-bottom: 10px;
+}
+
+.testimonials-description {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Divider with quote icon */
+.testimonials-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-divider .line {
+  width: 80px;
+  height: 2px;
+  background-color: #5b7f1d;
+  margin: 0 10px;
+}
+
+.testimonials-divider .dot {
+  font-size: 1.5rem;
+  color: #5b7f1d;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: relative;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.testimonial-role {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #5b7f1d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+/* Footer Styling */
+.footer {
+  background-color: #3b4e2d; /* Dark green background */
+  color: #ffffff;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer ul li strong {
+  font-weight: bold;
+}
+
+.footer ul li:hover {
+  color: #cfd5a8; /* Light green on hover */
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #cfd5a8;
+}
+
+.footer .privacy-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-box {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .content-box h1 {
+    font-size: 2rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .squiggly-lines {
+    width: 80px;
+    left: 10px;
+    top: 10px;
+  }
+
+  .leaf-icon {
+    width: 100px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .benefits-section .col-md-4 {
+    text-align: center;
+  }
+  .why-choose-section .col-md-3 {
+    margin-bottom: 30px;
+  }
+
+  .why-choose-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .choose-icon {
+    font-size: 2.5rem;
+  }
+  .service-card {
+    height: auto; /* Auto height for flexibility on smaller screens */
+    padding: 20px;
+  }
+
+  .service-card p {
+    font-size: 0.85rem; /* Smaller text for mobile */
+  }
+
+  .learn-more {
+    font-size: 0.85rem;
+  }
+
+  .service-icon {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  .testimonials-title {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-description {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-img {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
+
+  .testimonial-card h4 {
+    font-size: 1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.85rem;
+  }
+  .footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .squiggly-lines,
+  .leaf-icon {
+    display: none;
+  }
+}
+/* Tablet view adjustments for Our Services Section */
+@media (max-width: 1024px) {
+  .service-card {
+    height: 320px; /* Smaller height for tablets */
+  }
+
+  .service-card p {
+    font-size: 0.9rem; /* Smaller text for tablet */
+  }
+
+  .learn-more {
+    font-size: 0.9rem;
+  }
+
+  .service-icon {
+    font-size: 1.8rem;
+  }
+}

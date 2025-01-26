@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/contactUsPage.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/img/logo.png" alt="Logo" height="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutUsPage.html">Our Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactUsPage.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <a href="./loginPage.html" class="btn btn-outline-dark me-2"
+              >Sign In</a
+            >
+            <a href="./signupPage.html" class="btn btn-warning">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="hero-overlay">
+          <h1 class="hero-text">TALK TO OUR TEAM</h1>
+        </div>
+      </div>
+      <!-- Contact us Section -->
+      <div class="container my-5">
+        <h2 class="mb-4">Request A Quote!</h2>
+        <hr />
+        <p>
+          We specialize in civil and commercial building constructions, as well
+          as a variety of other services like Swimming Pools, Koi Fish Ponds,
+          Landscaping, Structural Strengthening of Buildings, Enhancing steel
+          trusses, and performing waterproofing and leak-proofing works for
+          concrete structures.
+        </p>
+
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-8">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Name should contain only letters and be between 3 to 50
+                  characters.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone *</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Phone number should be between 7 to 15 digits, and can start
+                  with '+'.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label"
+                  >Service Required *</label
+                >
+                <select class="form-select" id="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="construction">Construction</option>
+                  <option value="landscaping">Landscaping</option>
+                  <option value="waterproofing">Waterproofing</option>
+                </select>
+                <div class="invalid-feedback">Please select a service.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Our Terms *</label>
+                <div>
+                  <input type="checkbox" id="terms" required />
+                  <label for="terms">I Agree</label>
+                  <p>
+                    A nominal service fee will be charged based on the distance
+                    from our location to the site for certain types of
+                    enquiries, which require a site visit by our engineer to
+                    evaluate the site conditions, take measurements, prepare
+                    sketches/quotations etc. for further work.
+                  </p>
+                </div>
+                <div class="invalid-feedback">You must agree to the terms.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label"
+                  >Comment or Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Message must be between 10 and 500 characters.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 mb-4">
+              <h5>Our Details</h5>
+              <p><strong>Freedom Road</strong></p>
+              <p>Amman - Jordan</p>
+              <p>Phone: +962 12377777</p>
+              <p>Email: info@freedomroad.com</p>
+            </div>
+            <div class="card p-3">
+              <h5>Working <span class="text-success">Hours</span></h5>
+              <ul class="list-unstyled">
+                <li>Monday: 08:00 - 18:00</li>
+                <li>Tuesday: 08:00 - 18:00</li>
+                <li>Wednesday: 08:00 - 18:00</li>
+                <li>Thursday: 08:00 - 18:00</li>
+                <li>Friday: <span class="text-success">CLOSED</span></li>
+                <li>Saturday: <span class="text-success">CLOSED</span></li>
+                <li>Sunday: 09:00 - 18:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer bg-dark-green text-light py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><strong>Products</strong></li>
+                <li><strong>Applications</strong></li>
+                <li><strong>Design & Resource Center</strong></li>
+                <li><strong>Who We Are</strong></li>
+              </ul>
+            </div>
+
+            <!-- Center Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>Careers</li>
+                <li>Contact Us</li>
+                <li>Feedback Form</li>
+              </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>Preference Center</li>
+                <li>Sales Terms/Warranties</li>
+                <li>Vendor Information</li>
+              </ul>
+
+              <div class="social-icons mt-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <p class="mb-0">
+              &copy; 2025 Freedom Road Company
+              <a href="#" class="text-light privacy-link">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/contactUsPage.js"></script>
+  </body>
+</html>
