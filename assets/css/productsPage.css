@@ -1,0 +1,319 @@
+/* Main container to hold everything */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #faf6f0;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #faf6f0 !important; /* Updated navbar color */
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Dark text for better contrast */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5b7f1d; /* Matching the intro text color */
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Style for Sign In and Sign Up buttons */
+.btn-outline-dark {
+  color: #333;
+  border-color: #5b7f1d;
+}
+
+.btn-outline-dark:hover {
+  background-color: #5b7f1d;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #cfd5a8;
+  border-color: #cfd5a8;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #b8c07e;
+  border-color: #b8c07e;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url("../img/ProductsHerp.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-product {
+  background-color: #cfd5a8;
+  color: #000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-product:hover {
+  background-color: #b8c07e;
+  color: #fff;
+  transform: scale(1.05);
+}
+.hero-content .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+/* Adjust hero text size for smaller screens */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+/* Filter Section */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.filter-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .dropdown-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Aligning the filters next to each other */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between dropdowns */
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.dropdown-toggle {
+  background-color: #b8c07e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #4a6b17;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+}
+/* Product Card Styling */
+/* Product Card Styling */
+.product-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  height: 400px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+  .col-lg-3 {
+    width: 50%; /* Show 2 per row on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-lg-3 {
+    width: 100%; /* Show 1 per row on mobile */
+  }
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  flex-grow: 1; /* Allows text to expand without breaking layout */
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5b7f1d;
+}
+
+.product-rating {
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+/* Ensure the products section has the correct background */
+.products-section {
+  background-color: #faf6f0;
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+.ourProducts {
+  font-weight: bold;
+}
+
+/* Make the entire card clickable */
+.product-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep text colors the same */
+}
+
+.product-link:hover {
+  text-decoration: none;
+}
+
+/* Ensure hover effects still work */
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #3b4e2d; /* Dark green background */
+  color: #ffffff;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer ul li strong {
+  font-weight: bold;
+}
+
+.footer ul li:hover {
+  color: #cfd5a8; /* Light green on hover */
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #cfd5a8;
+}
+
+.footer .privacy-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Ensure products layout is responsive */
+@media (max-width: 992px) {
+  .col-md-4 {
+    width: 50%; /* Two per row on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    width: 100%; /* One per row on mobile */
+  }
+}
+
+/* Footer - Stack sections on mobile */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

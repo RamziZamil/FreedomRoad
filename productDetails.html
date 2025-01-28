@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/productDetails.css" />
+  </head>
+  <body>
+    <div class="main-container">
+       <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/img/logo.png" alt="Logo" height="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productsPage.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutUsPage.html">Our Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactUsPage.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <a href="./loginPage.html" class="btn btn-outline-dark me-2"
+              >Sign In</a
+            >
+            <a href="./signupPage.html" class="btn btn-warning">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container product-details mt-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="productsPage.html">Products</a>
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              Knauf Moisture Resistant Gypsum Board 12.5mm
+            </li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <!-- Product Image -->
+          <div class="col-md-5">
+            <img
+              src="./assets/img/gypsumBoard5.png"
+              alt="Knauf Moisture Resistant Gypsum Board"
+              class="img-fluid product-img"
+            />
+          </div>
+
+          <!-- Product Details -->
+          <div class="col-md-7">
+            <h2 class="product-title">
+              Knauf Moisture Resistant Gypsum Board 12.5mm
+            </h2>
+            <p class="product-description">
+              Knauf moisture resistant gypsum boards are used in interior wet
+              spaces with relative humidity <br />
+              <strong>< 70%</strong> (ventilated wet spaces) for partition wall
+              & ceiling applications.
+            </p>
+            <ul class="product-features">
+              <li>Easy, fast, and dry application</li>
+              <li>Good for decorative applications</li>
+              <li>
+                Low expansion and shrinkage when climate conditions change
+              </li>
+            </ul>
+
+            <!-- Quantity Selector and Add to Cart Button -->
+            <div class="quantity-section d-flex align-items-center">
+              <label for="quantity" class="me-2">Quantity:</label>
+              <select id="quantity" class="form-select w-auto">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+              </select>
+            </div>
+
+            <button class="btn btn-success mt-3">Add to Cart ➜</button>
+
+            <!-- Field of Application Icons -->
+            <div class="field-of-application mt-4">
+              <h5>Field of Application</h5>
+              <div class="icons d-flex gap-3">
+                <img src="./assets/img/wall-icon.png" alt="Wall" class="icon" />
+                <img
+                  src="./assets/img/ceiling-icon.png"
+                  alt="Ceiling"
+                  class="icon"
+                />
+                <img
+                  src="./assets/img/partition-icon.png"
+                  alt="Partition"
+                  class="icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="explore-more-container">
+        <h2 class="explore-title">Explore more..</h2>
+        <div class="explore-products">
+          <!-- Product 1 -->
+          <div class="explore-card">
+            <img src="./assets/img/gypsumBoard4.png" alt="Aquapanel Board" />
+            <div class="explore-card-body">
+              <h5>AQUAPANEL® Universal</h5>
+              <p>
+                A durable and 100% water-resistant made of aggregated Portland
+                cement...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard6.png"
+              alt="Fire Resistant Board"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Fire Resistant Gypsum Board</h5>
+              <p>
+                Knauf Fire Resistant gypsum boards are used in interior
+                drywall...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard5.png"
+              alt="Moisture Resistant 12.5mm"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Moisture Resistant Gypsum Board 12.5mm</h5>
+              <p>
+                Knauf moisture resistant gypsum boards are used in interior wet
+                space...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard7.png"
+              alt="Moisture Resistant 9.5mm"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Moisture Resistant Gypsum Board 9.5mm</h5>
+              <p>
+                Knauf moisture resistant gypsum boards are used in interior wet
+                space...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="explore-products mt-4">
+          <!-- Product 1 -->
+          <div class="explore-card">
+            <img src="./assets/img/gypsumBoard4.png" alt="Aquapanel Board" />
+            <div class="explore-card-body">
+              <h5>AQUAPANEL® Universal</h5>
+              <p>
+                A durable and 100% water-resistant made of aggregated Portland
+                cement...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard6.png"
+              alt="Fire Resistant Board"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Fire Resistant Gypsum Board</h5>
+              <p>
+                Knauf Fire Resistant gypsum boards are used in interior
+                drywall...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard5.png"
+              alt="Moisture Resistant 12.5mm"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Moisture Resistant Gypsum Board 12.5mm</h5>
+              <p>
+                Knauf moisture resistant gypsum boards are used in interior wet
+                space...
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="explore-card">
+            <img
+              src="./assets/img/gypsumBoard7.png"
+              alt="Moisture Resistant 9.5mm"
+            />
+            <div class="explore-card-body">
+              <h5>Knauf Moisture Resistant Gypsum Board 9.5mm</h5>
+              <p>
+                Knauf moisture resistant gypsum boards are used in interior wet
+                space...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer bg-dark-green text-light py-4">
+        <div class="container">
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><strong>Products</strong></li>
+                <li><strong>Applications</strong></li>
+                <li><strong>Design & Resource Center</strong></li>
+                <li><strong>Who We Are</strong></li>
+              </ul>
+            </div>
+
+            <!-- Center Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>Careers</li>
+                <li>Contact Us</li>
+                <li>Feedback Form</li>
+              </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>Preference Center</li>
+                <li>Sales Terms/Warranties</li>
+                <li>Vendor Information</li>
+              </ul>
+
+              <div class="social-icons mt-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <p class="mb-0">
+              &copy; 2025 Freedom Road Company
+              <a href="#" class="text-light privacy-link">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+/* Main container to hold everything */
+.main-container {
+  background-color: #faf6f0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #faf6f0 !important; /* Updated navbar color */
+  padding: 15px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Dark text for better contrast */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5b7f1d; /* Matching the intro text color */
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Style for Sign In and Sign Up buttons */
+.btn-outline-dark {
+  color: #333;
+  border-color: #5b7f1d;
+}
+
+.btn-outline-dark:hover {
+  background-color: #5b7f1d;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #cfd5a8;
+  border-color: #cfd5a8;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #b8c07e;
+  border-color: #b8c07e;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: url("../img/gypsumDetailsHero.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Overlay for better readability */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Styling */
+.gypsum-section {
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5b7f1d;
+  text-align: center;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Standard Gypsum Boards Section */
+.standard-gypsum-section {
+  background-color: #faf6f0;
+  padding: 50px 20px;
+}
+
+.standard-gypsum-section img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 5px; /* Optional: Slight rounded corners */
+}
+
+.standard-gypsum-section .section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5b7f1d;
+}
+
+.standard-gypsum-section .section-description {
+  max-width: 500px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Card Section  */
+
+.gypsum-cards-section {
+  background-color: #faf6f0;
+  padding: 40px 0;
+}
+
+.gypsum-card {
+  max-width: 400px; /* Set a fixed max width */
+  margin: auto; /* Center the cards */
+  background-color: #fdf2e2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gypsum-card:hover {
+  transform: scale(1.03);
+}
+
+.gypsum-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.gypsum-card .card-body {
+  padding: 15px; /* Reduce padding */
+}
+
+.gypsum-card .card-title {
+  font-size: 1rem; /* Reduce font size */
+  font-weight: bold;
+  color: #5b7f1d;
+}
+
+.gypsum-card .card-text {
+  font-size: 0.9rem; /* Smaller text */
+  color: #666;
+}
+
+.gypsum-card .card-link {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2e580c;
+  text-decoration: none;
+}
+
+.gypsum-card .card-link:hover {
+  color: #5b7f1d;
+  text-decoration: underline;
+}
+
+/* Technical Gypsum */
+.technical-gypsum-section {
+  background-color: #faf6f0;
+  padding: 50px 0;
+}
+
+.shadow-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper to contain all the cards */
+.gypsum-cards-container {
+  width: 100%;
+  padding: 50px 0; /* Adds spacing above and below */
+  display: flex;
+  justify-content: center;
+  background-color: #faf6f0; /* Matches the main-container bg color */
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+.learn-more {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #5b7f1d;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #3b4e2d; /* Dark green background */
+  color: #ffffff;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer ul li strong {
+  font-weight: bold;
+}
+
+.footer ul li:hover {
+  color: #cfd5a8; /* Light green on hover */
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #cfd5a8;
+}
+
+.footer .privacy-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .privacy-link:hover {
+  text-decoration: underline;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+    .standard-gypsum-section img, .technical-gypsum-section img{
+        display: none;
+    }
+  .card2 {
+    margin-top: 20px;
+  }
+}
